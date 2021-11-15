@@ -1,4 +1,4 @@
-package com.tdso.hrworker;
+package com.tdso.hrpayroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

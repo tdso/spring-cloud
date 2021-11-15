@@ -1,4 +1,4 @@
-package com.tdso.hrworker.models;
+package com.tdso.hrpayroll.models;
 
 public class Payment {
 	
