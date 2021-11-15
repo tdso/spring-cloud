@@ -14,6 +14,7 @@ import com.tdso.hrpayroll.models.Payment;
 @Service
 public class PaymentoService {
 	
+	// busca o valor da variavel hr-worker.host definida dentro do application-properties
 	@Value("${hr-worker.host}")
 	private String workerHost;
 	
@@ -21,7 +22,8 @@ public class PaymentoService {
 	private RestTemplate restTemplate;
 	
 	public Payment getPayment (Long id, Integer days) {
-		
+
+		// os parametros da URI tem que ser colocados em um Map 
 		Map<String, String> uriVariables = new HashMap<>();
 		uriVariables.put("id", ""+id);
 		
